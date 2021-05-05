@@ -91,9 +91,9 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v2.2.0/classes/chartxy.html
-[Intensity Mesh Series]: https://www.arction.com/lightningchart-js-api-documentation/v2.2.0/classes/intensitymeshseries.html
-[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v2.2.0/globals.html#colorrgba
-[LUT]: https://www.arction.com/lightningchart-js-api-documentation/v2.2.0/classes/lut.html
-[PalettedFill]: https://www.arction.com/lightningchart-js-api-documentation/v2.2.0/classes/palettedfill.html
+[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.0/classes/chartxy.html
+[Intensity Mesh Series]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.0/classes/intensitymeshseries.html
+[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.0/globals.html#colorrgba
+[LUT]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.0/classes/lut.html
+[PalettedFill]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.0/classes/palettedfill.html
 

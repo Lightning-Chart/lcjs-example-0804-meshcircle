@@ -36,7 +36,7 @@ const lut = new LUT({
     ],
     interpolate: true
 })
-const paletteFill = new PalettedFill({ lut, lookUpProperty: 'x' })
+const paletteFill = new PalettedFill({ lut, lookUpProperty: 'value' })
 
 // Specify the resolution used for the mesh.
 const rows = 51
@@ -62,6 +62,9 @@ const meshCircle = chart.addHeatmapSeries(intensityOptions)
             y: Math.cos(angle) * radius,
         }
     })
+
+// Add LegendBox to chart.
+chart.addLegendBox().add(chart)
 
 const data = (rows, columns) => {
     let result = Array.from(Array(columns)).map(() => Array(rows))
