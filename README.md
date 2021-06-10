@@ -1,6 +1,6 @@
-# Mesh Circle
+# JavaScript Mesh Circle Chart
 
-![Mesh Circle](meshCircle.png)
+![JavaScript Mesh Circle Chart](meshCircle.png)
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
