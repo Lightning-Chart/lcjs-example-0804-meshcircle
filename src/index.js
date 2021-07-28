@@ -17,7 +17,7 @@ const {
 const lc = lightningChart()
 
 const chart = lc.ChartXY({
-    // theme: Themes.dark
+    // theme: Themes.darkGold
 })
     .setTitle('Mesh Circle')
 
@@ -64,7 +64,13 @@ const meshCircle = chart.addHeatmapSeries(intensityOptions)
     })
 
 // Add LegendBox to chart.
-chart.addLegendBox().add(chart)
+chart.addLegendBox()
+    // Dispose example UI elements automatically if they take too much space. This is to avoid bad UI on mobile / etc. devices.
+    .setAutoDispose({
+        type: 'max-width',
+        maxWidth: 0.30,
+    })
+    .add(chart)
 
 const data = (rows, columns) => {
     let result = Array.from(Array(columns)).map(() => Array(rows))
