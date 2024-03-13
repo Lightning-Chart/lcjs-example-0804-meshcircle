@@ -11,7 +11,7 @@ const lc = lightningChart()
 
 const chart = lc
     .ChartXY({
-        theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
+        theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined
     })
     .setTitle('Mesh Circle')
 
