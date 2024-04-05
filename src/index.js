@@ -7,7 +7,9 @@ const lcjs = require('@arction/lcjs')
 // Extract required parts from LightningChartJS.
 const { lightningChart, IntensitySeriesTypes, PalettedFill, LUT, ColorRGBA, Themes } = lcjs
 
-const lc = lightningChart()
+const lc = lightningChart({
+            resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
+        })
 
 const chart = lc
     .ChartXY({
