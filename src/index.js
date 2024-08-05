@@ -2,7 +2,7 @@
  * LightningChartJS example for rendering a 'Mesh Circle'.
  */
 // Import LightningChartJS
-const lcjs = require('@arction/lcjs')
+const lcjs = require('@lightningchart/lcjs')
 
 // Extract required parts from LightningChartJS.
 const { lightningChart, IntensitySeriesTypes, PalettedFill, LUT, ColorRGBA, Themes } = lcjs
@@ -38,8 +38,6 @@ const columns = rows
 const intensityOptions = {
     rows,
     columns,
-    start: { x: 0, y: 0 },
-    end: { x: 50, y: 50 },
     pixelate: false,
     type: IntensitySeriesTypes.Mesh,
 }
@@ -56,6 +54,8 @@ const meshCircle = chart
             y: Math.cos(angle) * radius,
         }
     })
+    .setStart({ x: 0, y: 0 })
+    .setEnd({ x: 50, y: 50 })
 
 // Add LegendBox to chart.
 chart
