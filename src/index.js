@@ -57,16 +57,6 @@ const meshCircle = chart
     .setStart({ x: 0, y: 0 })
     .setEnd({ x: 50, y: 50 })
 
-// Add LegendBox to chart.
-chart
-    .addLegendBox()
-    // Dispose example UI elements automatically if they take too much space. This is to avoid bad UI on mobile / etc. devices.
-    .setAutoDispose({
-        type: 'max-width',
-        maxWidth: 0.3,
-    })
-    .add(chart)
-
 const data = (rows, columns) => {
     let result = Array.from(Array(columns)).map(() => Array(rows))
     for (let row = 0; row < rows; row++) {
